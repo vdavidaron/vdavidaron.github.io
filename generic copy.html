@@ -14,6 +14,69 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+		/* Add custom styles for the calendar */
+		.calendar {
+			max-width: 400px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.month ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.month ul li {
+			display: inline-block;
+			font-size: 20px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		.weekdays {
+			margin: 0;
+			padding: 10px 0;
+			background-color: #ddd;
+			list-style: none;
+		}
+
+		.weekdays li {
+			display: inline-block;
+			width: 13.6%;
+			font-size: 18px;
+		}
+
+		.days {
+			padding: 10px 0;
+			background: #eee;
+			list-style: none;
+		}
+
+		.days li {
+			display: inline-block;
+			width: 13.6%;
+			font-size: 18px;
+			text-align: center;
+			margin-bottom: 5px;
+		}
+
+		.days li:nth-child(7n),
+		.days li:last-child {
+			margin-right: 0;
+		}
+
+		.days li.available {
+			background-color: #b9f6ca;
+			cursor: pointer;
+		}
+
+		.days li.booked {
+			background-color: #ff8a80;
+			cursor: not-allowed;
+		}
+	</style>
 </head>
 
 <body class="is-preload">
