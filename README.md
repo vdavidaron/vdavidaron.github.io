@@ -1,4 +1,4 @@
-# vdavidaron.github.io
+# LUX hostel website
 Hackaton Kouvola 2024 Group 1
 
  
