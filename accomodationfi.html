@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel Room Booking System</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<style>
+		/* Add custom styles for the calendar */
+		.calendar {
+			max-width: 400px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.month ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.month ul li {
+			display: inline-block;
+			font-size: 20px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		.weekdays {
+			margin: 0;
+			padding: 10px 0;
+			background-color: #ddd;
+			list-style: none;
+		}
+
+		.weekdays li {
+			display: inline-block;
+			width: 13.6%;
+			font-size: 18px;
+			color: black;
+			/* Add this line to change the text color */
+		}
+
+		.days {
+			padding: 10px 0;
+			background: #eee;
+			list-style: none;
+		}
+
+		.days li {
+			display: inline-block;
+			width: 13.6%;
+			font-size: 18px;
+			text-align: center;
+			margin-bottom: 5px;
+			color: black;
+			/* Add this line to change the text color */
+		}
+
+		.days li:nth-child(7n),
+		.days li:last-child {
+			margin-right: 0;
+		}
+
+		.days li.available {
+			background-color: #b9f6ca;
+			cursor: pointer;
+		}
+
+		.days li.booked {
+			background-color: #ff8a80;
+			cursor: not-allowed;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">LUX hostel Kouvola</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="accomodation.html" class="active">Accomodation</a></li>
+				<li><a href="cafe.html">Café</a></li>
+				<li><a href="rental.html">Bicycle rental</a></li>
+				<li><a href="sights.html">Sights</a></li>
+				<li><a href="aboutus.html">About us</a></li>
+				<li><a href="sightsfi.html">Suomeksi</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<h1 class="major">Book your room here today</h1>
+				<span class="image fit"><img src="images/room1.png" alt="" /></span>
+				<p>Welcome to our hotel room booking system. Explore our available rooms and make your reservation!</p>
+			</div>
+		</section>
+
+		<!-- Calendar -->
+		<section id="calendar" class="main special">
+			<header class="major">
+				<h2>Calendar</h2>
+			</header>
+			<div class="calendar">
+				<!-- Calendar visuals go here -->
+				<div class="month">
+					<ul>
+						<li class="prev">&#10094;</li>
+						<li class="next">&#10095;</li>
+						<li>February<br><span style="font-size:18px">2024</span></li>
+					</ul>
+				</div>
+				<ul class="weekdays">
+					<li>Mo</li>
+					<li>Tu</li>
+					<li>We</li>
+					<li>Th</li>
+					<li>Fr</li>
+					<li>Sa</li>
+					<li>Su</li>
+				</ul>
+				<ul class="days">
+					<li class="available">1</li>
+					<li class="booked">2</li>
+					<li class="available">3</li>
+					<li class="booked">4</li>
+					<li class="booked">5</li>
+					<li class="available">6</li>
+					<li class="booked">7</li>
+					<li class="available">8</li>
+					<li class="available">9</li>
+					<li class="booked">10</li>
+					<li class="booked">11</li>
+					<li class="booked">12</li>
+					<li class="available">13</li>
+					<li class="available">14</li>
+					<li class="available">15</li>
+					<li class="available">16</li>
+					<li class="booked">17</li>
+					<li class="available">18</li>
+					<li class="available">19</li>
+					<li class="available">20</li>
+					<li class="available">21</li>
+					<li class="available">22</li>
+					<li class="available">23</li>
+					<li class="available">24</li>
+					<li class="available">25</li>
+					<li class="available">26</li>
+					<li class="available">27</li>
+					<li class="available">28</li>
+					<li class="available">29</li>
+					<!-- Add more days as needed -->
+				</ul>
+			</div>
+		</section>
+
+		<!-- Booking Form -->
+		<section id="booking" class="main special">
+			<header class="major">
+				<h2>Booking</h2>
+				<p>Booking form will be here</p>
+				<!-- Add booking form visuals here -->
+			</header>
+			<!-- Add booking form functionality here -->
+		</section>
+
+		<!-- Add more sections for additional functionality or information -->
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; LUX Hostel 2024. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
